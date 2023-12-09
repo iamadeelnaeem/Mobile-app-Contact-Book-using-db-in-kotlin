@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        android:background="#2E0052">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="70dp"
+            android:layout_height="40dp"
+            android:src="@drawable/img_4"
+            android:layout_marginLeft="60dp"
+            android:layout_marginTop="16dp" />
+
+        <TextView
+            android:id="@+id/musicCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif"
+            android:text="Contacts"
+            android:textColor="#FFFFFF"
+            android:textSize="30sp"
+            android:layout_marginEnd="50dp"
+            android:textStyle="bold"
+            tools:visibility="visible" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/search"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginHorizontal="5dp"
+        android:hint="Search"
+        android:layout_marginTop="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"/>
+<TextView
+    android:id="@+id/data"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="100dp"
+    />
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/search"
+        android:layout_above="@+id/addButton"
+        tools:listitem="@layout/row_item" />
+
+    <Button
+        android:id="@+id/addButton"
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:text="+"
+        android:layout_marginLeft="16dp"
+        android:layout_marginBottom="16dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"/>
+
+</RelativeLayout>
